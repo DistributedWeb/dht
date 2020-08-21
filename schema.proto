@@ -1,0 +1,10 @@
+message PeersInput {
+  optional uint32 port = 1;
+  optional bytes localAddress = 2;
+  optional bool unannounce = 3;
+}
+
+message PeersOutput {
+  optional bytes peers = 1;
+  optional bytes localPeers = 2;
+}
