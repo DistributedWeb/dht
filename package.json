@@ -1,10 +1,10 @@
 {
-  "name": "@hyperswarm/dht",
-  "version": "3.0.1",
-  "description": "The DHT backing the HyperSwarm stack",
+  "name": "@dwebswarm/dht",
+  "version": "3.0.0",
+  "description": "The DHT backing the DWebSwarm stack",
   "main": "index.js",
   "dependencies": {
-    "@hyperswarm/hypersign": "^2.0.0",
+    "@dwebswarm/dwebsign": "git://github.com/DistributedWeb/dwebsign.git#8add9a90aa4999b8c61ad02f299b9d20022b0750",
     "dht-rpc": "^4.1.6",
     "end-of-stream": "^1.4.1",
     "hashlru": "^2.3.0",
@@ -21,7 +21,7 @@
     "tap": "^14.5.0"
   },
   "bin": {
-    "hyperswarm-dht": "./bin.js"
+    "dwebswarm-dht": "./bin.js"
   },
   "scripts": {
     "test": "tap  -R classic test/*.test.js  && standard --fix",
@@ -37,12 +37,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/hyperswarm/dht.git"
+    "url": "https://github.com/dwebswarm/dht.git"
   },
   "author": "Mathias Buus (@mafintosh)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hyperswarm/dht/issues"
+    "url": "https://github.com/dwebswarm/dht/issues"
   },
-  "homepage": "https://github.com/hyperswarm/dht"
+  "homepage": "https://github.com/dwebswarm/dht"
 }

@@ -6,9 +6,9 @@ const peers = require('ipv4-peers')
 const LRU = require('hashlru')
 const { ImmutableStore, MutableStore } = require('./stores')
 const DEFAULT_BOOTSTRAP = [
-  'bootstrap1.hyperdht.org:49737',
-  'bootstrap2.hyperdht.org:49737',
-  'bootstrap3.hyperdht.org:49737'
+  'dht1.dwebx.net:49737',
+  'dht2.dwebx.net:49737',
+  'dht3.dwebx.net:49737'
 ]
 
 module.exports = opts => new HyperDHT(opts)

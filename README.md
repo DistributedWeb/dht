@@ -1,15 +1,15 @@
-# @hyperswarm/dht
+# @dwebswarm/dht
 
-The DHT powering the HyperSwarm stack
+The DHT powering the DWebSwarm stack
 
 ```
-npm install @hyperswarm/dht
+npm install @dwebswarm/dht
 ```
 
 ## Usage
 
 ``` js
-const dht = require('@hyperswarm/dht')
+const dht = require('@dwebswarm/dht')
 const crypto = require('crypto')
 
 const node = dht({
@@ -40,7 +40,7 @@ node.announce(topic, { port: 12345 }, function (err) {
 
 #### `const node = dht([options])`
 
-Create a new HyperSwarm DHT node.
+Create a new DWebSwarm DHT node.
 
 Options include:
 
@@ -265,8 +265,8 @@ Emitted when a lookup is received.
 There is a CLI available as well.
 
 ```sh
-npm install -g @hyperswarm/dht
-hyperswarm-dht # runs a DHT node
+npm install -g @dwebswarm/dht
+dwebswarm-dht # runs a DHT node
 ```
 
 ## License
