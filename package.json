@@ -1,0 +1,48 @@
+{
+  "name": "@dwebswarm/dht",
+  "version": "4.0.0",
+  "description": "The DHT backing the DWebSwarm stack",
+  "main": "index.js",
+  "dependencies": {
+    "@dwebswarm/dwebsign": "git://github.com/DistributedWeb/dwebsign.git#53c7bdf0ee9b62fd85bb928aff35b0fd959b6e7c",
+    "dht-rpc": "^4.2.0",
+    "end-of-stream": "^1.4.1",
+    "hashlru": "^2.3.0",
+    "ipv4-peers": "^2.0.0",
+    "protocol-buffers-encodings": "^1.1.0",
+    "record-cache": "^1.1.0",
+    "sodium-universal": "^2.0.0"
+  },
+  "devDependencies": {
+    "get-port": "^5.0.0",
+    "nonsynchronous": "^1.0.1",
+    "protocol-buffers": "^4.1.0",
+    "standard": "^13.1.0",
+    "tap": "^14.5.0"
+  },
+  "bin": {
+    "dwebswarm-dht": "./bin.js"
+  },
+  "scripts": {
+    "test": "tap  -R classic test/*.test.js  && standard --fix",
+    "cov": "tap -R classic --100 --coverage-report=html test/*.test.js",
+    "ci": "standard && npm test",
+    "protobuf": "protocol-buffers schema.proto -o messages.js"
+  },
+  "nyc": {
+    "exclude": [
+      "messages.js",
+      "**/test/**"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dwebswarm/dht.git"
+  },
+  "author": "Mathias Buus (@mafintosh)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dwebswarm/dht/issues"
+  },
+  "homepage": "https://github.com/dwebswarm/dht"
+}
