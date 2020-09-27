@@ -7,9 +7,9 @@ const LRU = require('hashlru')
 const { ImmutableStore, MutableStore } = require('./stores')
 const guardTimeout = require('guard-timeout').create({ lagMs: 60 * 1000 })
 const DEFAULT_BOOTSTRAP = [
-  'bootstrap1.hyperdht.org:49737',
-  'bootstrap2.hyperdht.org:49737',
-  'bootstrap3.hyperdht.org:49737'
+  'dht1.dwebx.net:49737',
+  'dht2.dwebx.net:49737',
+  'dht3.dwebx.net:49737'
 ]
 
 // 20 mins but will be round(EPH_AFTER + random() * EPH_AFTER / 2), so will be between 20-30 mins
