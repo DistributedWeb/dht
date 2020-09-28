@@ -4,7 +4,7 @@
   "description": "The DHT backing the dwebswarm stack",
   "main": "index.js",
   "dependencies": {
-    "@dwebswarm/dwebsign": "^2.0.0",
+    "@dwebswarm/dwebsign": "git://github.com/DistributedWeb/dwebsign.git#397993ebc1722c0a951088e4c853e44655013dd5",
     "dht-rpc": "^4.8.0",
     "end-of-stream": "^1.4.1",
     "guard-timeout": "^2.0.0",
