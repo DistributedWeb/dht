@@ -1,6 +1,6 @@
 # @dwebswarm/dht
 
-The DHT powering the dwebswarm stack
+The DHT powering the dWebSwarm Stack
 
 ```
 npm install @dwebswarm/dht
@@ -40,7 +40,7 @@ node.announce(topic, { port: 12345 }, function (err) {
 
 #### `const node = dht([options])`
 
-Create a new dwebswarm DHT node.
+Create a new dWeb DHT node.
 
 Options include:
 
@@ -260,7 +260,7 @@ Emitted when a lookup is received.
 
 ## CLI
 
-You can start a DHT node in the command line, using the [@dwebswarm/cli](https://github.com/dwebswarm/cli) package:
+You can start a DHT node in the command line, using the [@dwebswarm/cli](https://github.com/distributedweb/cli) package:
 
 ```sh
 npm install -g @dwebswarm/cli
